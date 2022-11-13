@@ -160,9 +160,9 @@ public class MainActivity extends AppCompatActivity {
             imageView.setImageResource(R.drawable.cross_icon);
 
             if (checkPlayerwin()){
-              // WinDialog winDialog = new WinDialog(MainActivity.this, playerOneName.getText().toString() + "has won the match" , MainActivity.this);
-             //  winDialog.setCancelable(false);
-               // winDialog.show();
+              WinDialog winDialog = new WinDialog(MainActivity.this, playerOneName.getText().toString() + "has won the match" , MainActivity.this);
+              winDialog.setCancelable(false);
+              winDialog.show();
                 Toast.makeText(MainActivity.this,playerOneName.getText().toString() + " has won the match",Toast.LENGTH_LONG).show();
                 restartMatch();
 

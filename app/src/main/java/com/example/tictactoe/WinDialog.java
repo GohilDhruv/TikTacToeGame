@@ -23,7 +23,7 @@ public class WinDialog extends Dialog {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.win_dialog_layout);
         final TextView massageText = findViewById(R.id.massageTxt);
-        final Button startAgainBtn = findViewById(R.id.startGameBtn);
+        final Button startAgainBtn = findViewById(R.id.startAgainBtn);
         massageText.setText(massage);
         startAgainBtn.setOnClickListener(new View.OnClickListener() {
             @Override
